@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start-server": "nodemon dist/server/app.js",
-    "server-compile": "tsc -p src/server -w",
+    "server-compile-watch": "tsc -p src/server -w",
+    "server-compile": "tsc -p src/server",
     "client-compile": "webpack --config webpack.config.js"
   },
   "nodemonConfig": {

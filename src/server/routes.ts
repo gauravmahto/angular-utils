@@ -1,10 +1,14 @@
+/**
+ * Copyright 2017 - Author gauravm.git@gmail.com
+ */
+
 import * as express from 'express';
 
 import { Data } from './views';
 
 export class Routes {
 
-  public constructor(private readonly app: express.Application) {    
+  public constructor(private readonly app: express.Application) {
   }
 
   public registerAppRoutes(): void {
@@ -13,11 +17,14 @@ export class Routes {
 
   }
 
-  private processGet(req: express.Request, res: express.Response, next: express.NextFunction) {
+  private processGet(req: express.Request,
+    res: express.Response,
+    next: express.NextFunction) {
 
     res.json({
       message: Data.get()
     });
+
     next();
 
   }

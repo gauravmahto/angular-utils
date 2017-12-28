@@ -1,3 +1,7 @@
+/**
+ * Copyright 2017 - Author gauravm.git@gmail.com
+ */
+
 import {
   HttpErrorResponse, HttpEvent,
   HttpHandler, HttpInterceptor, HttpRequest,
@@ -5,6 +9,8 @@ import {
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+
+const log = console.log;
 
 @Injectable()
 export class DataInterceptor implements HttpInterceptor {
@@ -18,7 +24,7 @@ export class DataInterceptor implements HttpInterceptor {
 
         if (response instanceof HttpResponse) {
 
-          console.log('res');
+          log('res');
 
         }
 
@@ -26,7 +32,7 @@ export class DataInterceptor implements HttpInterceptor {
 
         if (err instanceof HttpErrorResponse) {
 
-          console.log('err');
+          log('err');
 
         }
 

@@ -1,3 +1,7 @@
+/**
+ * Copyright 2017 - Author gauravm.git@gmail.com
+ */
+
 import './globals';
 
 import * as express from 'express';
@@ -5,6 +9,8 @@ import * as express from 'express';
 import { Routes } from 'routes';
 
 // Import ends.
+
+const log = console.log;
 
 const app = express();
 
@@ -15,5 +21,5 @@ const route = new Routes(app);
 route.registerAppRoutes();
 
 app.listen(80, () => {
-  console.log('Server started on port 80');
+  log('Server started on port 80');
 });

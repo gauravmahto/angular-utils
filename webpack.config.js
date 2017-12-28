@@ -1,3 +1,7 @@
+/**
+ * Copyright 2017 - Author gauravm.git@gmail.com
+ */
+
 let webPackConfig;
 
 if (process.env.ENV === 'production') {

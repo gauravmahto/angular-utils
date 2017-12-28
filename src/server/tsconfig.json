@@ -15,6 +15,7 @@
     "noUnusedParameters": true,
     "moduleResolution": "node",
     "suppressImplicitAnyIndexErrors": true,
+    "noEmitOnError": false,
     "experimentalDecorators": true,
     "sourceMap": true,
     "sourceRoot": ".",

@@ -1,3 +1,7 @@
+/**
+ * Copyright 2017 - Author gauravm.git@gmail.com
+ */
+
 const path = require('path');
 
 const projectRoot = path.join(__dirname, '..');
@@ -14,4 +18,4 @@ module.exports.root = function root(...names) {
 
   return absoluteRoot;
 
-}
+};

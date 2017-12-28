@@ -1,3 +1,7 @@
+/**
+ * Copyright 2017 - Author gauravm.git@gmail.com
+ */
+
 const root = require('./helpers').root;
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -76,8 +80,8 @@ module.exports = {
     new CleanWebpackPlugin([
       root('dist/client')
     ], {
-      root: root()
-    }),
+        root: root()
+      }),
 
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)@angular/,
